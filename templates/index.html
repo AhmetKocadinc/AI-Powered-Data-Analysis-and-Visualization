@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Uploader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .container {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .dashboard-header {
+            font-size: 24px;
+            color: #007bff;
+            margin-top: 20px;
+        }
+
+        .dashboard-graph {
+            margin-top: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload a CSV or XLSX File</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
