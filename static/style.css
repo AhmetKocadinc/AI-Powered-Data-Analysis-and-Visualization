@@ -1,0 +1,30 @@
+
+    .dashboard-container {
+        background-color: #f8f9fa;
+        padding: 20px;
+    }
+    .dashboard-header {
+        text-align: center;
+        color: #343a40;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .col {
+        flex: 0 0 48%;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .correlation {
+        text-align: center;
+    }
+    .correlation-img {
+        width: 80%;
+        margin-top: 20px;
+    }
